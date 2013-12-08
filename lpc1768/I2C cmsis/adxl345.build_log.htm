@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Cisco\Desktop\U0638_GY_80\adxl345\lpc1768\I2C cmsis\adxl345.uvproj
+Project File Date:  12/01/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(499): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "char *restrict"
+        sprintf((signed char*)lcd_buf, "gyro=%6d \r\n", L3G_X());
+main.c(502): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "unsigned char *"
+                UART0_SendString((signed char *)lcd_buf);
+main.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=18436 RO-data=524 RW-data=132 ZI-data=756  
+FromELF: creating hex file...
+".\adxl345.axf" - 0 Error(s), 2 Warning(s).
+Load "C:\\Users\\Cisco\\Desktop\\U0638_GY_80\\adxl345\\lpc1768\\I2C cmsis\\adxl345.axf" 
+Error: Flash Download failed  -  Target DLL has been cancelled
+Load "C:\\Users\\Cisco\\Desktop\\U0638_GY_80\\adxl345\\lpc1768\\I2C cmsis\\adxl345.axf" 
+Set JLink Project File to "C:\Users\Cisco\Desktop\U0638_GY_80\adxl345\lpc1768\I2C cmsis\JLinkSettings.ini"
+* JLink Info: Device "LPC1768" selected (512 KB flash, 32 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.78j, compiled Nov 22 2013 20:08:33
+Firmware: J-Link ARM V8 compiled Nov  8 2013 12:07:30
+Hardware: V8.00
+S/N : 58004321 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDB 
+ 
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: LPC1768
+VTarget = 3.332V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
+ES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+s incompatible with parameter of type "unsigned char *"
+                UART0_SendString((signed char *)lcd_buf);
+main.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=19496 RO-data=528 RW-data=132 ZI-data=756  
+FromELF: creating hex file...
+".\adxl345.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\Users\\Cisco\\Desktop\\U0638_GY_80\\adxl345\\lpc1768\\I2C cmsis\\adxl345.axf" 
+Set JLink Project File to "C:\Users\Cisco\Desktop\U0638_GY_80\adxl345\lpc1768\I2C cmsis\JLinkSettings.ini"
+* JLink Info: Device "LPC1768" selected (512 KB flash, 32 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.78j, compiled Nov 22 2013 20:08:33
+Firmware: J-Link ARM V8 compiled Nov  8 2013 12:07:30
+Hardware: V8.00
+S/N : 58004321 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDB 
+ 
+* JLink Info: TotalIRLen = 4, IRPrint = 0x01
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: LPC1768
+VTarget = 3.332V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+: warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "char *restrict"
+  sprintf((signed char*)lcd_buf, "ut=%d \r", ((cal_param[0] << 8) | cal_param[1]));
+main.c(486): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "unsigned char *"
+        UART0_SendString((signed char*)lcd_buf);
+main.c(492): error:  #254: type name is not allowed
+        sprintf((signed char*)lcd_buf, "gyro=%6d \r\n", int16_t L3G_X());
+main.c(492): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "char *restrict"
+        sprintf((signed char*)lcd_buf, "gyro=%6d \r\n", int16_t L3G_X());
+main.c(492): error:  #18: expected a ")"
+        sprintf((signed char*)lcd_buf, "gyro=%6d \r\n", int16_t L3G_X());
+main.c(495): warning:  #167-D: argument of type "signed char *" is incompatible with parameter of type "unsigned char *"
+                UART0_SendString((signed char *)lcd_buf);
+main.c: 11 warnings, 2 errors
+compiling uart.c...
+compiling debug_frmwrk.c...
+compiling lpc17xx_clkpwr.c...
+compiling core_cm3.c...
+compiling system_LPC17xx.c...
+".\adxl345.axf" - 2 Error(s), 20 Warning(s).
+Target not created
